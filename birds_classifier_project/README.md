@@ -46,20 +46,24 @@ This project follows the assignment constraints:
 
 ```text
 birds_classifier_project/
-├── main.py
-├── run_experiments.py
-├── requirements.txt
-├── README.md
-└── src/
-    ├── __init__.py
-    ├── constants.py
-    ├── data_loader.py
-    ├── perceptron.py
-    ├── adaline.py
-    ├── metrics.py
-    ├── pipeline.py
-    ├── visualization.py
-    └── gui.py
+|-- main.py
+|-- run_experiments.py
+|-- requirements.txt
+|-- README.md
+|-- docs/
+|   `-- screenshots/
+|       |-- birds-adaline-gui.jpeg
+|       `-- birds-perceptron-gui.jpeg
+`-- src/
+    |-- __init__.py
+    |-- constants.py
+    |-- data_loader.py
+    |-- perceptron.py
+    |-- adaline.py
+    |-- metrics.py
+    |-- pipeline.py
+    |-- visualization.py
+    `-- gui.py
 ```
 
 ---
@@ -79,6 +83,24 @@ Put `birds.csv` in the project folder, or browse to it from the GUI.
 ```bash
 python main.py
 ```
+
+---
+
+## Screenshots
+
+These screenshots show the birds classifier GUI included in this repository.
+
+### 1. Birds classifier GUI with Adaline
+
+![Birds classifier Adaline GUI](docs/screenshots/birds-adaline-gui.jpeg)
+
+This screenshot shows the Tkinter birds classifier running the Adaline model on `beak_length` and `beak_depth`, including the results panel and the plotted decision boundary.
+
+### 2. Birds classifier GUI with Perceptron
+
+![Birds classifier Perceptron GUI](docs/screenshots/birds-perceptron-gui.jpeg)
+
+This screenshot shows the same GUI using the Perceptron model on `beak_length` and `fin_length`, with the learned boundary and evaluation output visible after training.
 
 ---
 
@@ -194,4 +216,3 @@ birds.csv
 ```
 
 If your CSV is somewhere else, click **Browse** in the GUI.
-
